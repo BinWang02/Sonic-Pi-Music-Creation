@@ -27,6 +27,13 @@ Subject to the Prohibited Uses (see below), the Content License allows users to:
 https://online-audio-converter.com
 https://www.looperman.com/loops/tags/free-guzheng-loops-samples-sounds-wavs-download
 https://freesound.org/people/CarlosCarty/sounds/520729/
+
+Samples:
+https://pixabay.com/sound-effects/lovely-chinese-guzheng-bowed-16700/
+https://pixabay.com/sound-effects/guzheng-solo-22676/
+https://pixabay.com/sound-effects/chinese-beat-190047/
+https://pixabay.com/sound-effects/a-ride-through-chinese-valley-62241/
+
 My project is called Hip-hop Meets Guzheng. My idea is to combine modern hip-hop
 style with traditional Chinese instruments to create a new sound.
 Project challenge
