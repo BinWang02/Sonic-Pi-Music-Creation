@@ -1,10 +1,10 @@
+# set your project path only once
+# 
+PROJECT_DIR = "home/BingWang/Sonic-Pi-Music-Creation"
 
-# This is the main program for SonicPi Guzhen meets Hiphop
+valley = PROJECT_DIR + "/samples/wave/a-ride-through-chinese-valley-62241.wav"
+beat   = PROJECT_DIR + "/samples/wave/chinese-beat-190047.wav"
+solo   = PROJECT_DIR + "/samples/wave/guzheng-solo-22676.wav"
+bowed  = PROJECT_DIR + "/samples/wave/lovely-chinese-guzheng-bowed-16700.wav"
 
-#Simple 
-use_synth :saw
-play 38
-sleep 0.25
-play 50
-sleep 0.25
-play 62
+sample valley
