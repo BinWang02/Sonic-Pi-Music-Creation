@@ -123,73 +123,76 @@ live_loop :drum_a do
   bar = get(:bar_count) % 8
   
   # For the first 2 bars (bar 0 and 1), I keep the pattern very simple.
-# I only use the kick drum sound (:bd_haus).
+  # I only use the kick drum sound (:bd_haus).
   # I want this to sound like a calm intro before the beat builds up.
   if bar < 2
     sample :bd_haus    # play the bass drum sound once
     sleep 1   # wait for 1 beat, this gives space between hits
     sleep 1   # wait another 1 beat, so total 2 beats of silence before next kick
     sample :bd_haus   # play the bass drum again
-    sleep 1
-    sleep 1
+    sleep 1   # another beat of space
+    sleep 1   # final beat to complete the 4-beat pattern
   # For the next 2 bars (2, 3), I add a snare drum.
   elsif bar < 4
-    sample :bd_haus    # short wait between kick and hat
-    sleep 0.5
+    sample :bd_haus    # kick drum to start the bar
+    sleep 0.5   # short wait between kick and hat
     # play closed hi-hat quietly (amp 0.6)
     # amp means volume
     sample :drum_cymbal_closed, amp: 0.6
-    sleep 0.5
-      # snare drum hit on beat 2
+    sleep 0.5   # complete the first beat
+    # snare drum hit on beat 2
     sample :sn_dolf
-    sleep 1
+    sleep 1     # full beat for the snare
     # repeat kick, hat, snare again for the second half of this bar
     sample :bd_haus
-    sleep 0.5
+    sleep 0.5   # same timing as before
     sample :drum_cymbal_closed, amp: 0.6
-    sleep 0.5
+    sleep 0.5   # complete the third beat
     sample :sn_dolf
-    sleep 1
+    sleep 1     # final beat of the bar
   # For bars 4 and 5, the pattern gets faster and more busy.
   # I make everything faster: shorter sleep times and more hi-hats.
   elsif bar < 6
-    sample :bd_haus
+    sample :bd_haus   # kick drum starts the faster pattern
     # shorter sleep than before (0.25) makes the beat tighter
     sleep 0.25
-     # hi-hat with slightly louder volume (0.7)
+    # hi-hat with slightly louder volume (0.7)
     sample :drum_cymbal_closed, amp: 0.7
-    sleep 0.25
+    sleep 0.25        # quick timing for tighter feel
     # snare hit to keep the rhythm strong
     sample :sn_dolf
-      # repeat the same pattern again
-    sleep 0.5
-    sample :bd_haus
-    sleep 0.25
+    # repeat the same pattern again
+    sleep 0.5         # half beat before repeating
+    sample :bd_haus   # second kick in the pattern
+    sleep 0.25        # same tight timing
     sample :drum_cymbal_closed, amp: 0.7
-    sleep 0.25
-    sample :sn_dolf
-    sleep 0.5
+    sleep 0.25        # complete the pattern
+    sample :sn_dolf   # second snare hit
+    sleep 0.5         # prepare for the fast hi-hats
+    # This creates a fast hi-hat roll for excitement
     8.times do
-      sample :drum_cymbal_closed, amp: 0.5
-      sleep 0.125
+      sample :drum_cymbal_closed, amp: 0.5  # quieter hi-hats for the roll
+      sleep 0.125   # very fast timing creates the rolling effect
     end
   # For the last 2 bars (6, 7), it's the most energetic part to lead back to the beginning of the pattern.
   else
+    # The climax pattern: kick and snare together for maximum energy
     2.times do
-      sample :bd_haus, amp: 1
-      sample :sn_dolf, amp: 1
-      sleep 0.25
-      sample :drum_cymbal_closed, amp: 0.7
-      sleep 0.25
+      sample :bd_haus, amp: 1    # full volume kick
+      sample :sn_dolf, amp: 1     # full volume snare at the same time
+      sleep 0.25                  # quick timing
+      sample :drum_cymbal_closed, amp: 0.7  # hi-hat to fill
+      sleep 0.25                  # complete the beat
     end
-    # Fast hi-hats.
+    # Fast hi-hats for a rolling effect
     8.times do
-      sample :drum_cymbal_closed, amp: 0.5
-      sleep 0.125
+      sample :drum_cymbal_closed, amp: 0.5  # quieter for texture
+      sleep 0.125                 # very fast roll
     end
+    # Final powerful snare hits to end the pattern
     2.times do
-      sample :sn_dolf, amp: 1.1
-      sleep 0.25
+      sample :sn_dolf, amp: 1.1   # extra loud for impact
+      sleep 0.25                  # quick succession
     end
   end
   
