@@ -41,6 +41,4 @@ in_thread do
   # amp is volume, rate is speed+pitch (1.0 = normal, smaller slower lower pitch)
   sample valleyGuzheng, amp: 0.9, rate: 1.0
 
-  # if nothing happens here… prob your path wrong or file name wrong or no wav
-  # or your speaker is muted. check those.
 end
