@@ -1,5 +1,5 @@
-# set your project path only once
-# 
+
+# Set this to my project directory
 PROJECT_DIR = "home/BingWang/Sonic-Pi-Music-Creation"
 
 valley = PROJECT_DIR + "/samples/wave/a-ride-through-chinese-valley-62241.wav"
