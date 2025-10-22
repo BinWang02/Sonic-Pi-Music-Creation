@@ -15,3 +15,7 @@ Make guzheng melody
 Add reverb and echo
 
 Play A → B → A → end
+
+Journal:
+sonic pi no mp3
+online converter
