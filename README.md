@@ -1,18 +1,31 @@
 # Sonic-Pi-Music-Creation Hip-hop Meets Guzheng (Sonic Pi)
 
-## What this is
+# What this is
 
-- A step-by-step Sonic Pi project mixing a hip-hop beat with guzheng samples.
-- Each step has a commit, code comments are intentionally casual like a student.
+This is a small music project using Sonic Pi.
+I mixed a hip-hop drum beat with Chinese guzheng sounds.
+The song is about 60 seconds long.
+I wrote the code in main.rb to control how and when the sounds play.
+It uses loops and samples to make the music step by step.
 
 ## Folder
 
-- `main.rb` — Sonic Pi script (root)
-- `samples` — external MP3 guzheng samples
+- main.rb — Sonic Pi script
+- samples — folder external MP3 guzheng samples
+- finalVersion.wav - my final 60s song genereated by the main.rb in Sonic Pi
+
+# How to use
+
+Open Sonic Pi.
+Open main.rb.
+
+In the code, there are two file paths called bowedGuzheng and soloGuzheng.
+You need to change these file paths to match your own folder or the correct place where the sample files are stored.
+Press Run in Sonic Pi.
+
+The music will play and stop after 60 seconds.
 
 ## Sonic Pi
-
-Tested with a modern Sonic Pi build. External samples must be WAV/AIFF/FLAC (no MP3).
 
 Liscence:
 Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=22676">freesound_community</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=22676">Pixabay</a>
@@ -24,56 +37,11 @@ Subject to the Prohibited Uses (see below), the Content License allows users to:
 ✓ Use Content without having to attribute the author (although giving credit is always appreciated by our community!)
 ✓ Modify or adapt Content into new works
 
-https://online-audio-converter.com
-https://www.looperman.com/loops/tags/free-guzheng-loops-samples-sounds-wavs-download
-https://freesound.org/people/CarlosCarty/sounds/520729/
+#Sound sample links
+Lovely Chinese guzheng bowed: https://pixabay.com/sound-effects/lovely-chinese-guzheng-bowed-16700/
+Guzheng solo: https://pixabay.com/sound-effects/guzheng-solo-22676/
+Chinese beat: https://pixabay.com/sound-effects/chinese-beat-190047/
+A ride through Chinese valley: https://pixabay.com/sound-effects/a-ride-through-chinese-valley-62241/
+Looperman Guzheng loops: https://www.looperman.com/loops/tags/free-guzheng-loops-samples-sounds-wavs-download
 
-Samples:
-https://pixabay.com/sound-effects/lovely-chinese-guzheng-bowed-16700/
-https://pixabay.com/sound-effects/guzheng-solo-22676/
-https://pixabay.com/sound-effects/chinese-beat-190047/
-https://pixabay.com/sound-effects/a-ride-through-chinese-valley-62241/
-
-My project is called Hip-hop Meets Guzheng. My idea is to combine modern hip-hop
-style with traditional Chinese instruments to create a new sound.
-Project challenge
-This project posed both technical and artistic challenges for me. Firstly, this was my
-first time making music, and as someone with no coding experience, I needed to
-develop both skills. Secondly, the styles of guzheng and hip-hop are completely
-different, so finding a balance between rhythm and melody was a challenge. But I was
-incredibly confident in this project, hoping to fuse different cultures and integrate
-traditional sounds into a new context.
-Project type
-I chose Musical Composition because I love hip-hop music. Before this project, I had
-also wanted to write my own song, which intrigued me. I chose to combine hip-hop
-with Chinese instruments, hoping to create a different sound and music that reflects
-Chinese culture.
-Coding environment
-I chose Sonic Pi, it’s designed for live music programming and is perfect for hip-hop.
-Most importantly, Sonic Pi can import custom samples, allowing me to incorporate
-guzheng recordings into my work. Furthermore, it provides a wealth of tutorials and
-learning materials, allowing beginners to quickly get started.
-Resource requirements
-Code: I will use the Sonic Pi resource package, which includes examples and
-tutorials, as well as some code resources. I will also learn from a "Jazzy Hip-hop
-generator" example on YouTube, written with Sonic Pi, that demonstrates how to
-combine jazz and hip-hop elements.
-Sampling: I will use a Chinese instrument sound (guzheng), building on the code I
-learned from YouTube about importing external audio, saving audio formats, and
-more.
-Learning Resources: I will study Sonic Pi examples and tutorials, referencing hip-hop
-beat demos on YouTube, and examples of integrating traditional Chinese instruments
-with modern music on BiliBili. Additionally, I will refer to a YouTube tutorial on
-how to insert external samples (such as the guzheng) into Sonic Pi, as well as a
-tutorial on how to play the guzheng on TikTok using GarageBand.
-Timeline
-In Week 7, install Sonic Pi, create project files, and prepare guzheng samples.
-In Week 8, program hip-hop drumbeats, including kick, snare, and hi-hat, and
-incorporate swing.
-In Week 9, add a bassline and establish an A/B structure to lay the foundation for the
-work.
-In Week 10, integrate the guzheng melody into the beat, adjusting pitch and tempo,
-and balancing volume.
-In Week 11, refine the arrangement, add transitions, and employ effects like reverb
-and echo, resulting in a complete 1–2-minute draft.
-In Week 12, finalize the mix, organize the code, export a demo, and submit it.
+Freesound sample by CarlosCarty: https://freesound.org/people/CarlosCarty/sounds/520729/
