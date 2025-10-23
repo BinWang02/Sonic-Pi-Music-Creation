@@ -11,7 +11,7 @@ It uses loops and samples to make the music step by step.
 ## Folder
 
 - main.rb — Sonic Pi script
-- samples — folder external MP3 guzheng samples
+- samples/wave — folder contains our wav guzheng samples
 - finalVersion.wav - my final 60s song genereated by the main.rb in Sonic Pi
 
 # How to use
@@ -37,11 +37,7 @@ Subject to the Prohibited Uses (see below), the Content License allows users to:
 ✓ Use Content without having to attribute the author (although giving credit is always appreciated by our community!)
 ✓ Modify or adapt Content into new works
 
-#Sound sample links
+# Sound sample links
+
 Lovely Chinese guzheng bowed: https://pixabay.com/sound-effects/lovely-chinese-guzheng-bowed-16700/
 Guzheng solo: https://pixabay.com/sound-effects/guzheng-solo-22676/
-Chinese beat: https://pixabay.com/sound-effects/chinese-beat-190047/
-A ride through Chinese valley: https://pixabay.com/sound-effects/a-ride-through-chinese-valley-62241/
-Looperman Guzheng loops: https://www.looperman.com/loops/tags/free-guzheng-loops-samples-sounds-wavs-download
-
-Freesound sample by CarlosCarty: https://freesound.org/people/CarlosCarty/sounds/520729/
